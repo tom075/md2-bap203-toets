@@ -1,0 +1,17 @@
+/* Hier kun je eigen fancy CSS inzetten om de site mooier te maken of aan te passen qua stijl en layout */
+body {
+    background: repeating-radial-gradient(
+        circle,
+        purple,
+        purple 10px,
+        #4b026f 10px,
+        #4b026f 20px
+      );
+}
+
+main {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: #333 2px 2px 7px;
+}
