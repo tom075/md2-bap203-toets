@@ -27,5 +27,5 @@ Route::get('/help', function(){
 Route::get('/laravel-links','LinksController@index')->name('links');
 
 
-Route::get('/link-toevoegen', 'Links@showLinksForm')->name('link.toevoegen');
-Route::post('/link-opslaan', 'Links@handleLinksForm')->name('link.opslaan');
+Route::get('/link-toevoegen', 'LinksController@showLinksForm')->name('link.toevoegen');
+Route::post('/link-opslaan', 'LinksController@handleLinksForm')->name('link.opslaan');

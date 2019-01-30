@@ -15,9 +15,14 @@ class LinksController extends Controller
     }
 
     public function showLinksForm(){
-
+        return view('link-toevoegen');
     }
-    public function handleLinksForm(Request$request){
+    public function handleLinksForm(Request $request){
+          $request->validate([
+            'title' => 'required|confirmed|min:8',
+            'description' => 'required',
+            'url' => 'required|active_url'
 
+        ]);
     }
 }

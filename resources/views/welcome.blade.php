@@ -17,9 +17,4 @@
     </p>
 @endsection
 
-@section('sidebar')
-    <ul class="nav flex-column">
-        <li class="nav-item"><a href="{{url('/laravel-links')}}">De links pagina</a></li>
-        <li class="nav-item"><!-- Voeg hier de link toe naar het formulier om een nieuwe link toe te voegen --></li>
-    </ul>
-@endsection
+

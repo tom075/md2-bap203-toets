@@ -20,9 +20,13 @@
                 @show
             </div>
             <div class="col-xs-12 col-md-3">
-                @section('sidebar')
-                <!-- dit is de sidebar section die je in je view kunt invullen / overschrijven -->
-                @show
+                    @section('sidebar')
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a href="{{url('/')}}">Home</a></li>
+                            <li class="nav-item"><a href="{{url('/laravel-links')}}">De links pagina</a></li>
+                            <li class="nav-item"><a href="{{url('/link-toevoegen')}}">Link toevoegen</a></li>
+                        </ul>
+                    @show
             </div>
         </div>
     </main>
